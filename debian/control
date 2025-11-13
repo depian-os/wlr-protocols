@@ -1,0 +1,20 @@
+Source: wlr-protocols
+Section: x11
+Priority: optional
+Maintainer: rewine <luhongxu@deepin.org>
+Build-Depends: debhelper (>= 11),
+               libwayland-dev
+Standards-Version: 4.1.3
+Homepage: https://gitlab.freedesktop.org/wlroots/wlr-protocols
+#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
+#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+
+Package: wlr-protocols
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Wayland protocols designed for use in wlroots
+  wlr-protocols contains Wayland protocols that add functionality not
+  available in the Wayland core protocol, and specific to wlroots-based
+  compositors. Such protocols either add completely new functionality, or
+  extend the functionality of some other protocol either in Wayland core,
+  or some other protocol in wayland-protocols.
